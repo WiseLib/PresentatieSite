@@ -168,6 +168,7 @@ section > * {
 }
 
 .download-list {
+    text-align:center;
     padding:1em;
     display:inline-block;
     border: 1px solid rgb(208,224,129);
@@ -204,5 +205,38 @@ section > * {
 .person img {
     width: 150px;
     height: auto;
+}
+
+table {
+    border-collapse : collapse;
+}
+
+th, td {
+    text-align:left;
+    padding : 0.5em;
+    padding-left: 3em;
+    padding-right: 3em;
+    border: 1px solid rgb(200,200,200);
+}
+
+.priority-none {
+    color: rgb(103,103,103);
+}
+.priority-low {
+    color: rgb(179,204,51);
+}
+.priority-medium {
+    color: rgb(255,123,27);
+}
+.priority-high {
+    color: rgb(208,90,67);
+}
+
+.completed-true {
+    /*opacity: 0.5;*/
+}
+
+.completed-false {
+    /*background-color : rgb(228,159,145);*/
 }
 
