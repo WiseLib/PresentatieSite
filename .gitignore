@@ -1,5 +1,4 @@
 
-# hide deploy scripts
-.travis/deploy
+# prevent private key from being added
 .travis/deploy_key
 

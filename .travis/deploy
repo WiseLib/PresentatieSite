@@ -1,0 +1,10 @@
+#!/bin/sh
+
+SCRIPTPATH=$(dirname "$SCRIPT")
+
+rsync -azi -e ssh --delete --delete-excluded \
+  --filter='P doc/**/*' \
+  --filter 'P app/**/*' \
+  --exclude=".*" \
+  "$SCRIPTPATH/.." se2_1415@wilma.vub.ac.be:public_html/
+
