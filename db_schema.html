@@ -1,0 +1,460 @@
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<title>DB schema Wiselib</title>
+</head>
+<body>
+<h5 align="right" style="color: gray; ">Snapshot on 2014-12-06 15:04:47</h5>
+<h3>Database: se2_1415</h3>
+<br>
+<h4>academic_discipline</h4>
+<table border=1 width=75%>
+<tr>
+	<th width=35%>Field</th>
+	<th width=30%>Type</th>
+	<th width=15%>Allow Null</th>
+	<th width=20%>Default Value</th>
+</tr>
+<tr>
+	<td width=35%>name</td>
+	<td width=30%>varchar(64)</td>
+	<td width=15%>No</td>
+	<td width=20%></td>
+</tr>
+<tr>
+	<td width=35%>part_of_academic_discipline_id</td>
+	<td width=30%>int(11) UNSIGNED</td>
+	<td width=15%>Yes</td>
+	<td width=20%></td>
+</tr>
+<tr>
+	<td width=35% style="text-decoration: underline"><em>id</em></td>
+	<td width=30%>int(11) UNSIGNED</td>
+	<td width=15%>No</td>
+	<td width=20%></td>
+</tr>
+</table>
+<br>
+<h4>affiliation</h4>
+<table border=1 width=75%>
+<tr>
+	<th width=35%>Field</th>
+	<th width=30%>Type</th>
+	<th width=15%>Allow Null</th>
+	<th width=20%>Default Value</th>
+</tr>
+<tr>
+	<td width=35% style="text-decoration: underline"><em>id</em></td>
+	<td width=30%>int(11) UNSIGNED</td>
+	<td width=15%>No</td>
+	<td width=20%></td>
+</tr>
+<tr>
+	<td width=35%>part_of_affiliation_id</td>
+	<td width=30%>int(11) UNSIGNED</td>
+	<td width=15%>Yes</td>
+	<td width=20%></td>
+</tr>
+<tr>
+	<td width=35%>name</td>
+	<td width=30%>varchar(64)</td>
+	<td width=15%>No</td>
+	<td width=20%></td>
+</tr>
+</table>
+<br>
+<h4>conference</h4>
+<table border=1 width=75%>
+<tr>
+	<th width=35%>Field</th>
+	<th width=30%>Type</th>
+	<th width=15%>Allow Null</th>
+	<th width=20%>Default Value</th>
+</tr>
+<tr>
+	<td width=35% style="text-decoration: underline"><em>id</em></td>
+	<td width=30%>int(11) UNSIGNED</td>
+	<td width=15%>No</td>
+	<td width=20%></td>
+</tr>
+<tr>
+	<td width=35%>rank</td>
+	<td width=30%>float</td>
+	<td width=15%>No</td>
+	<td width=20%></td>
+</tr>
+<tr>
+	<td width=35%>name</td>
+	<td width=30%>varchar(128)</td>
+	<td width=15%>No</td>
+	<td width=20%></td>
+</tr>
+</table>
+<br>
+<h4>conference_has_academic_discipline</h4>
+<table border=1 width=75%>
+<tr>
+	<th width=35%>Field</th>
+	<th width=30%>Type</th>
+	<th width=15%>Allow Null</th>
+	<th width=20%>Default Value</th>
+</tr>
+<tr>
+	<td width=35% style="text-decoration: underline"><em>conference_id</em></td>
+	<td width=30%>int(11) UNSIGNED</td>
+	<td width=15%>No</td>
+	<td width=20%></td>
+</tr>
+<tr>
+	<td width=35%>academic_discipline_id</td>
+	<td width=30%>int(11) UNSIGNED</td>
+	<td width=15%>No</td>
+	<td width=20%></td>
+</tr>
+</table>
+<br>
+<h4>journal</h4>
+<table border=1 width=75%>
+<tr>
+	<th width=35%>Field</th>
+	<th width=30%>Type</th>
+	<th width=15%>Allow Null</th>
+	<th width=20%>Default Value</th>
+</tr>
+<tr>
+	<td width=35% style="text-decoration: underline"><em>id</em></td>
+	<td width=30%>int(11) UNSIGNED</td>
+	<td width=15%>No</td>
+	<td width=20%></td>
+</tr>
+<tr>
+	<td width=35%>rank</td>
+	<td width=30%>float</td>
+	<td width=15%>No</td>
+	<td width=20%></td>
+</tr>
+<tr>
+	<td width=35%>name</td>
+	<td width=30%>varchar(128)</td>
+	<td width=15%>No</td>
+	<td width=20%></td>
+</tr>
+</table>
+<br>
+<h4>journal_has_academic_discipline</h4>
+<table border=1 width=75%>
+<tr>
+	<th width=35%>Field</th>
+	<th width=30%>Type</th>
+	<th width=15%>Allow Null</th>
+	<th width=20%>Default Value</th>
+</tr>
+<tr>
+	<td width=35% style="text-decoration: underline"><em>journal_id</em></td>
+	<td width=30%>int(11) UNSIGNED</td>
+	<td width=15%>No</td>
+	<td width=20%></td>
+</tr>
+<tr>
+	<td width=35%>academic_discipline_id</td>
+	<td width=30%>int(11) UNSIGNED</td>
+	<td width=15%>No</td>
+	<td width=20%></td>
+</tr>
+</table>
+<br>
+<h4>journal_publication</h4>
+<table border=1 width=75%>
+<tr>
+	<th width=35%>Field</th>
+	<th width=30%>Type</th>
+	<th width=15%>Allow Null</th>
+	<th width=20%>Default Value</th>
+</tr>
+<tr>
+	<td width=35% style="text-decoration: underline"><em>id</em></td>
+	<td width=30%>int(11) UNSIGNED</td>
+	<td width=15%>No</td>
+	<td width=20%></td>
+</tr>
+<tr>
+	<td width=35%>appeared_in_nr</td>
+	<td width=30%>smallint(6) UNSIGNED</td>
+	<td width=15%>No</td>
+	<td width=20%></td>
+</tr>
+<tr>
+	<td width=35%>appeared_in_volume_nr</td>
+	<td width=30%>smallint(6) UNSIGNED</td>
+	<td width=15%>No</td>
+	<td width=20%></td>
+</tr>
+<tr>
+	<td width=35%>part_of_journal_id</td>
+	<td width=30%>int(11) UNSIGNED</td>
+	<td width=15%>No</td>
+	<td width=20%></td>
+</tr>
+</table>
+<br>
+<h4>person</h4>
+<table border=1 width=75%>
+<tr>
+	<th width=35%>Field</th>
+	<th width=30%>Type</th>
+	<th width=15%>Allow Null</th>
+	<th width=20%>Default Value</th>
+</tr>
+<tr>
+	<td width=35%>first_name</td>
+	<td width=30%>varchar(35)</td>
+	<td width=15%>No</td>
+	<td width=20%></td>
+</tr>
+<tr>
+	<td width=35%>last_name</td>
+	<td width=30%>varchar(35)</td>
+	<td width=15%>No</td>
+	<td width=20%></td>
+</tr>
+<tr>
+	<td width=35% style="text-decoration: underline"><em>id</em></td>
+	<td width=30%>int(11) UNSIGNED</td>
+	<td width=15%>No</td>
+	<td width=20%></td>
+</tr>
+<tr>
+	<td width=35%>picture</td>
+	<td width=30%>varchar(20)</td>
+	<td width=15%>Yes</td>
+	<td width=20%></td>
+</tr>
+</table>
+<br>
+<h4>proceeding_publication</h4>
+<table border=1 width=75%>
+<tr>
+	<th width=35%>Field</th>
+	<th width=30%>Type</th>
+	<th width=15%>Allow Null</th>
+	<th width=20%>Default Value</th>
+</tr>
+<tr>
+	<td width=35% style="text-decoration: underline"><em>id</em></td>
+	<td width=30%>int(11) UNSIGNED</td>
+	<td width=15%>No</td>
+	<td width=20%></td>
+</tr>
+<tr>
+	<td width=35%>held_in_city_name</td>
+	<td width=30%>varchar(16)</td>
+	<td width=15%>No</td>
+	<td width=20%></td>
+</tr>
+<tr>
+	<td width=35%>published_by_person_id</td>
+	<td width=30%>int(11) UNSIGNED</td>
+	<td width=15%>No</td>
+	<td width=20%></td>
+</tr>
+<tr>
+	<td width=35%>part_of_conference_id</td>
+	<td width=30%>int(11) UNSIGNED</td>
+	<td width=15%>No</td>
+	<td width=20%></td>
+</tr>
+</table>
+<br>
+<h4>publication</h4>
+<table border=1 width=75%>
+<tr>
+	<th width=35%>Field</th>
+	<th width=30%>Type</th>
+	<th width=15%>Allow Null</th>
+	<th width=20%>Default Value</th>
+</tr>
+<tr>
+	<td width=35% style="text-decoration: underline"><em>id</em></td>
+	<td width=30%>int(11) UNSIGNED</td>
+	<td width=15%>No</td>
+	<td width=20%></td>
+</tr>
+<tr>
+	<td width=35%>publication_type</td>
+	<td width=30%>varchar(30)</td>
+	<td width=15%>No</td>
+	<td width=20%></td>
+</tr>
+<tr>
+	<td width=35%>title</td>
+	<td width=30%>varchar(64)</td>
+	<td width=15%>No</td>
+	<td width=20%></td>
+</tr>
+<tr>
+	<td width=35%>publication_title</td>
+	<td width=30%>varchar(64)</td>
+	<td width=15%>No</td>
+	<td width=20%></td>
+</tr>
+<tr>
+	<td width=35%>nr_of_pages</td>
+	<td width=30%>smallint(6)</td>
+	<td width=15%>No</td>
+	<td width=20%></td>
+</tr>
+<tr>
+	<td width=35%>published_in_year</td>
+	<td width=30%>smallint(4)</td>
+	<td width=15%>No</td>
+	<td width=20%></td>
+</tr>
+<tr>
+	<td width=35%>url</td>
+	<td width=30%>varchar(512)</td>
+	<td width=15%>No</td>
+	<td width=20%></td>
+</tr>
+<tr>
+	<td width=35%>published_by_user_id</td>
+	<td width=30%>int(11) UNSIGNED</td>
+	<td width=15%>No</td>
+	<td width=20%></td>
+</tr>
+<tr>
+	<td width=35%>summary_text</td>
+	<td width=30%>text</td>
+	<td width=15%>No</td>
+	<td width=20%></td>
+</tr>
+</table>
+<br>
+<h4>publication_edited_by_person</h4>
+<table border=1 width=75%>
+<tr>
+	<th width=35%>Field</th>
+	<th width=30%>Type</th>
+	<th width=15%>Allow Null</th>
+	<th width=20%>Default Value</th>
+</tr>
+<tr>
+	<td width=35% style="text-decoration: underline"><em>publication_id</em></td>
+	<td width=30%>int(11) UNSIGNED</td>
+	<td width=15%>No</td>
+	<td width=20%></td>
+</tr>
+<tr>
+	<td width=35% style="text-decoration: underline"><em>person_id</em></td>
+	<td width=30%>int(11) UNSIGNED</td>
+	<td width=15%>No</td>
+	<td width=20%></td>
+</tr>
+</table>
+<br>
+<h4>publication_has_keyword</h4>
+<table border=1 width=75%>
+<tr>
+	<th width=35%>Field</th>
+	<th width=30%>Type</th>
+	<th width=15%>Allow Null</th>
+	<th width=20%>Default Value</th>
+</tr>
+<tr>
+	<td width=35% style="text-decoration: underline"><em>publication_id</em></td>
+	<td width=30%>int(11) UNSIGNED</td>
+	<td width=15%>No</td>
+	<td width=20%></td>
+</tr>
+<tr>
+	<td width=35% style="text-decoration: underline"><em>keyword</em></td>
+	<td width=30%>varchar(30)</td>
+	<td width=15%>No</td>
+	<td width=20%></td>
+</tr>
+</table>
+<br>
+<h4>publication_written_by_person</h4>
+<table border=1 width=75%>
+<tr>
+	<th width=35%>Field</th>
+	<th width=30%>Type</th>
+	<th width=15%>Allow Null</th>
+	<th width=20%>Default Value</th>
+</tr>
+<tr>
+	<td width=35% style="text-decoration: underline"><em>publication_id</em></td>
+	<td width=30%>int(11) UNSIGNED</td>
+	<td width=15%>No</td>
+	<td width=20%></td>
+</tr>
+<tr>
+	<td width=35% style="text-decoration: underline"><em>person_id</em></td>
+	<td width=30%>int(11) UNSIGNED</td>
+	<td width=15%>No</td>
+	<td width=20%></td>
+</tr>
+</table>
+<br>
+<h4>user</h4>
+<table border=1 width=75%>
+<tr>
+	<th width=35%>Field</th>
+	<th width=30%>Type</th>
+	<th width=15%>Allow Null</th>
+	<th width=20%>Default Value</th>
+</tr>
+<tr>
+	<td width=35%>email_address</td>
+	<td width=30%>varchar(255)</td>
+	<td width=15%>No</td>
+	<td width=20%></td>
+</tr>
+<tr>
+	<td width=35%>part_of_affiliation_id</td>
+	<td width=30%>int(11) UNSIGNED</td>
+	<td width=15%>No</td>
+	<td width=20%></td>
+</tr>
+<tr>
+	<td width=35%>password</td>
+	<td width=30%>char(30)</td>
+	<td width=15%>No</td>
+	<td width=20%></td>
+</tr>
+<tr>
+	<td width=35%>person_id</td>
+	<td width=30%>int(11) UNSIGNED</td>
+	<td width=15%>No</td>
+	<td width=20%></td>
+</tr>
+<tr>
+	<td width=35% style="text-decoration: underline"><em>id</em></td>
+	<td width=30%>int(11) UNSIGNED</td>
+	<td width=15%>No</td>
+	<td width=20%></td>
+</tr>
+</table>
+<br>
+<h4>user_studies_academic_discipline</h4>
+<table border=1 width=75%>
+<tr>
+	<th width=35%>Field</th>
+	<th width=30%>Type</th>
+	<th width=15%>Allow Null</th>
+	<th width=20%>Default Value</th>
+</tr>
+<tr>
+	<td width=35% style="text-decoration: underline"><em>academic_discipline_id</em></td>
+	<td width=30%>int(11) UNSIGNED</td>
+	<td width=15%>No</td>
+	<td width=20%></td>
+</tr>
+<tr>
+	<td width=35% style="text-decoration: underline"><em>user_id</em></td>
+	<td width=30%>int(11) UNSIGNED</td>
+	<td width=15%>No</td>
+	<td width=20%></td>
+</tr>
+</table>
+</body>
+</html>

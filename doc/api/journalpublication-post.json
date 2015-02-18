@@ -1,0 +1,31 @@
+{
+    "type": "Journal",
+    "title": "",
+    "numberOfPages": 21,
+    "year": 2013,
+    "url": "www.example.com/myPublication",
+    "authors" : [
+        {
+            "id":40000
+        }
+    ],
+    "disciplines": [
+        {
+            "id":123456
+        },
+        {
+            "id":654321
+        }
+    ],
+    "keywords": [
+        {
+            "keyword": "myKeyword"
+        },
+        {
+            "keyword": "myOtherKeyword"
+        }
+    ],
+    "journalId": 987654,
+    "volume":56,
+    "number":3
+}

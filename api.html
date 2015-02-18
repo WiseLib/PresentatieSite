@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="stylesheet.css" />
+        <title>WiseLib API</title>
+    </head>
+    <body>
+    	<header>
+            <div class="logo">
+                <h1 class="logo-name">WiseLib</h1>
+            </div>
+            <nav>
+                <ul class="menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="progress.html">Progress</a></li>
+                    <li><a href="documents.html">Documents</a></li>
+                    <li><a class="current-menu-item" href="#">API</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </nav>
+            <div class="banner-text">
+                <h1>Share your publications online</h1>
+                <p>Look for papers from researchers all around the world</p>
+            </div>
+        </header>
+        <div class="content">
+        	<section>
+        		<h1 class="section-title">Wiselib API</h1>
+        		<div class="api">
+        			<h2 class="api-title">Discipline</h2>
+        			<div class="api-method">
+        				<h3>Request</h3>
+        				<p>GET : disciplines.json</p>
+        				<p>Get all disciplines.</p>
+        				<h3>Response</h3>
+        				<iframe class="api-body" content-type="text/plain" src="doc/api/disciplines-get.json"></iframe> 
+        			</div>
+        			<div class="api-method">
+        				<h3>Request</h3>
+        				<p>GET : disciplines/{id}.json</p>
+        				<p>Get a specific discipline.</p>
+        				<h3>Response</h3>
+        				<iframe class="api-body" content-type="text/plain" src="doc/api/discipline-get.json"></iframe> 
+        			</div>
+        			<div class="api-method">
+        				<h3>Request</h3>
+        				<p>POST : disciplines.json</p>
+        				<p>Post a discipline.</p>
+        				<iframe class="api-body" content-type="text/plain" src="doc/api/discipline-post.json"></iframe>
+        				<h3>Response</h3>
+        				<p>disciplines/{id}.json</p> 
+        			</div>
+        			<div class="api-method">
+        				<h3>Request</h3>
+        				<p>PUT : disciplines/{id}.json</p>
+        				<p>Update the content of a specific discipline according to the JSON</p>
+        				<iframe class="api-body" content-type="text/plain" src="doc/api/discipline-put.json"></iframe> 
+        				<h3>Response</h3>
+        				<p>200</p>
+        			</div>
+        		</div>
+        		<div class="api">
+        			<h2 class="api-title">User</h2>
+        			<div class="api-method">
+        				<h3>Request</h3>
+        				<p>GET : users/{id}.json</p>
+        				<p>Get a specific user.</p>
+        				<h3>Response</h3>
+        				<iframe class="api-body" content-type="text/plain" src="doc/api/user-get.json"></iframe> 
+        			</div>
+        			<div class="api-method">
+        				<h3>Request</h3>
+        				<p>POST : users.json</p>
+        				<p>Post a user.</p>
+        				<iframe class="api-body" content-type="text/plain" src="doc/api/user-post.json"></iframe>
+        				<h3>Response</h3>
+        				<p>users/{id}.json</p> 
+        			</div>
+        			<div class="api-method">
+        				<h3>Request</h3>
+        				<p>PUT : users/{id}.json</p>
+        				<p>Update the content of a specific user according to the JSON</p>
+        				<iframe class="api-body" content-type="text/plain"src="doc/api/user-put.json"></iframe> 
+        				<h3>Response</h3>
+        				<p>200</p>
+        			</div>
+        		</div>
+        		<div class="api">
+        			<h2 class="api-title">Person</h2>
+        			<div class="api-method">
+        				<h3>Request</h3>
+        				<p>GET : persons.json</p>
+        				<p>Get all persons.</p>
+        				<h3>Response</h3>
+        				<iframe class="api-body" content-type="text/plain" src="doc/api/persons-get.json"></iframe> 
+        			</div>
+        			<div class="api-method">
+        				<h3>Request</h3>
+        				<p>GET : persons/{id}.json</p>
+        				<p>Get a specific person.</p>
+        				<h3>Response</h3>
+        				<iframe class="api-body" content-type="text/plain" src="doc/api/person-get.json"></iframe> 
+        			</div>
+        			<div class="api-method">
+        				<h3>Request</h3>
+        				<p>POST : persons.json</p>
+        				<p>Post a person.</p>
+        				<iframe class="api-body" content-type="text/plain" src="doc/api/person-post.json"></iframe>
+        				<h3>Response</h3>
+        				<p>persons/{id}.json</p> 
+        			</div>
+        			<div class="api-method">
+        				<h3>Request</h3>
+        				<p>PUT : persons/{id}.json</p>
+        				<p>Update the content of a specific person according to the JSON</p>
+        				<iframe class="api-body" content-type="text/plain" src="doc/api/person-put.json"></iframe> 
+        				<h3>Response</h3>
+        				<p>200</p>
+        			</div>
+        		</div>
+        		<div class="api">
+        			<h2 class="api-title">Journal</h2>
+        			<div class="api-method">
+        				<h3>Request</h3>
+        				<p>GET : journals.json</p>
+        				<p>Get all journals.</p>
+        				<h3>Response</h3>
+        				<iframe class="api-body" content-type="text/plain" src="doc/api/journals-get.json"></iframe> 
+        			</div>
+        			<div class="api-method">
+        				<h3>Request</h3>
+        				<p>GET : journals/{id}.json</p>
+        				<p>Get a specific journal.</p>
+        				<h3>Response</h3>
+        				<iframe class="api-body" content-type="text/plain" src="doc/api/journal-get.json"></iframe> 
+        			</div>
+        			<div class="api-method">
+        				<h3>Request</h3>
+        				<p>POST : journals.json</p>
+        				<p>Post a journal.</p>
+        				<iframe class="api-body" content-type="text/plain" src="doc/api/journal-post.json"></iframe>
+        				<h3>Response</h3>
+        				<p>journals/{id}.json</p> 
+        			</div>
+        			<div class="api-method">
+        				<h3>Request</h3>
+        				<p>PUT : journals/{id}.json</p>
+        				<p>Update the content of a specific journal according to the JSON</p>
+        				<iframe class="api-body" content-type="text/plain" src="doc/api/journal-put.json"></iframe> 
+        				<h3>Response</h3>
+        				<p>200</p>
+        			</div>
+        		</div>
+        		<div class="api">
+        			<h2 class="api-title">Proceeding</h2>
+        			<div class="api-method">
+        				<h3>Request</h3>
+        				<p>GET : proceedings.json</p>
+        				<p>Get all proceedings.</p>
+        				<h3>Response</h3>
+        				<iframe class="api-body" content-type="text/plain" src="doc/api/proceedings-get.json"></iframe> 
+        			</div>
+        			<div class="api-method">
+        				<h3>Request</h3>
+        				<p>GET : proceedings/{id}.json</p>
+        				<p>Get a specific proceeding.</p>
+        				<h3>Response</h3>
+        				<iframe class="api-body" content-type="text/plain" src="doc/api/proceeding-get.json"></iframe> 
+        			</div>
+        			<div class="api-method">
+        				<h3>Request</h3>
+        				<p>POST : proceedings.json</p>
+        				<p>Post a proceeding.</p>
+        				<iframe class="api-body" content-type="text/plain" src="doc/api/proceeding-post.json"></iframe>
+        				<h3>Response</h3>
+        				<p>proceedings/{id}.json</p> 
+        			</div>
+        			<div class="api-method">
+        				<h3>Request</h3>
+        				<p>PUT : proceedings/{id}.json</p>
+        				<p>Update the content of a specific proceeding according to the JSON</p>
+        				<iframe class="api-body" content-type="text/plain" src="doc/api/proceeding-put.json"></iframe> 
+        				<h3>Response</h3>
+        				<p>200</p>
+        			</div>
+        		</div>
+        		<div class="api">
+        			<h2 class="api-title">Publication</h2>
+        			<div class="api-method">
+        				<h3>Request</h3>
+        				<p>GET : publications/{id}.json</p>
+        				<p>Get a specific publication.</p>
+        				<h3>Response</h3>
+        				<p>If the publication was published in a journal :</p>
+        				<iframe class="api-body" content-type="text/plain" src="doc/api/journalpublication-get.json"></iframe> 
+        				<p>If the publication was published in a proceeding :</p>
+        				<iframe class="api-body" content-type="text/plain" src="doc/api/proceedingpublication-get.json"></iframe> 
+        			</div>
+        			<div class="api-method">
+        				<h3>Request</h3>
+        				<p>POST : publications.json</p>
+        				<p>Post a publication.</p>
+        				<p>If the publication was published in a journal :</p>
+        				<iframe class="api-body" content-type="text/plain" src="doc/api/journalpublication-post.json"></iframe>
+        				<p>If the publication was published in a proceeding :</p>
+        				<iframe class="api-body" content-type="text/plain" src="doc/api/proceedingpublication-post.json"></iframe>
+        				<h3>Response</h3>
+        				<p>publications/{id}.json</p> 
+        			</div>
+        			<div class="api-method">
+        				<h3>Request</h3>
+        				<p>PUT : publications/{id}.json</p>
+        				<p>Update the content of a specific publication according to the JSON</p>
+        				<iframe class="api-body" content-type="text/plain" src="doc/api/publication-put.json"></iframe> 
+        				<h3>Response</h3>
+        				<p>200</p>
+        			</div>
+        		</div>
+        	</section>
+        </div>
+    </body>
+</html>

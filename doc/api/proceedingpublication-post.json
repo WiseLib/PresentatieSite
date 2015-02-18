@@ -1,0 +1,32 @@
+{
+    "type": "Proceeding"
+    "title": "my title",
+    "numberOfPages": 21,
+    "year": 2013,
+    "url": "www.example.com/myPublication",
+    "authors" : [
+        {
+            "id":40000
+        }
+    ],
+    "disciplines": [
+        {
+            "id":123456
+        },
+        {
+            "id":654321
+        }
+    ],
+    "keywords": [
+        {
+            "keyword": "myKeyword"
+        },
+        {
+            "keyword": "myOtherKeyword"
+        }
+    ],
+    "conferenceId": 456789,
+    "editors": "The Editors",
+    "publisher": "The Publisher",
+    "city": "Boston"
+}

@@ -1,0 +1,11 @@
+{
+    "firstName": "Mathieu",
+    "lastName": "Reymond",
+    "birthDate": "Wed Aug 01 00:00:00 BST 2012",
+    "disciplines": [
+        {
+            "id": 123456
+        }
+    ],
+    "affiliationId": 555555
+}

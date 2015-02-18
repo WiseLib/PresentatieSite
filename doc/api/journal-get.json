@@ -1,0 +1,13 @@
+{
+    "id": 987654,
+    "name": "Foundations and Trends in Machine Learning",
+    "rank": 12.076,
+    "disciplines": [
+        {
+            "id":123456
+        },
+        {
+            "id":654321
+        }
+    ]
+}
