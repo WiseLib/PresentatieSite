@@ -8,7 +8,7 @@
             "id":123456
         }
     ],
-    "affiliationId": 555555,
+    "affiliation": 555555,
     "publications": [
         {
             "id":100000

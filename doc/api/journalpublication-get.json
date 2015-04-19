@@ -26,7 +26,7 @@
             "keyword": "myOtherKeyword"
         }
     ],
-    "journalId": 987654,
+    "journal": 987654,
     "volume":56,
     "number":3
 }

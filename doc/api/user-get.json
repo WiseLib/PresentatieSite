@@ -2,7 +2,7 @@
     "id": 900000,
     "email": "mathieu.reymond@vub.ac.be",
     "password": "password",
-    "personId": 400000,
+    "person": 400000,
     "library": [
         {
             "id": 100000

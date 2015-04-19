@@ -1,5 +1,5 @@
 {
-    "type": "Proceeding"
+    "type": "Proceeding",
     "title": "my title",
     "numberOfPages": 21,
     "year": 2013,
@@ -25,7 +25,7 @@
             "keyword": "myOtherKeyword"
         }
     ],
-    "conferenceId": 456789,
+    "conference": 456789,
     "editors": "The Editors",
     "publisher": "The Publisher",
     "city": "Boston"

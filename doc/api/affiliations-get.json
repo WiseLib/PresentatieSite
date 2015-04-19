@@ -1,0 +1,13 @@
+{
+    "affiliations": [
+        {
+            "id": 1,
+            "name": "Vrije Universiteit Brussel"
+        },
+        {
+            "id": 2,
+            "name": "Wetenschappen en Bio-ingenieurswetenschappen",
+            "parent": 1
+        }
+    ]
+}
